@@ -86,16 +86,16 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
-Header,
-Footer{
+header,
+footer{
   display:flex;
-  justify-content: center;
-  align-items: center;
+  justify-content:center;
+  align-items:center;
   flex-flow:row wrap;
   border:1px solid red;
 }
 
-
+/*========= header mobile flex layout ============*/
 header .content-wrapper{
   display:flex;
   justify-content:center;
@@ -116,7 +116,6 @@ header nav{
   border:1px solid orange;
 }
 
-
 header nav ul{
   display:flex;
   justify-content:space-around;
@@ -134,9 +133,22 @@ header nav ul li{
 }
 
 
+/*============== footer mobile flex layout ================*/
 
+footer .social-icons{
+  display:flex;
+  justify-content:center;
+  align-items: center;
+  border:1px solid green;
+}
 
-
+footer .social p{
+  display:flex;
+  justify-content:center;
+  align-items: center;
+  padding:2px;
+  border:1px solid blue;
+}
 
 /* ==========================================================================
    Helper classes
