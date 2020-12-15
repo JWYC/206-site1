@@ -419,7 +419,7 @@ aside{
   }
 
   .header-divider{
-    width:0;
+    display:none;
   }
 
   header nav{
@@ -450,7 +450,7 @@ aside{
 }
 
   .features article{
-    width:50%;
+    flex-basis:50%;
   }
 
  .reviews article{
@@ -532,7 +532,8 @@ address.contact-content{
 }
 
 .faq-question-item{
-  width:48%;
+  flex:40%;
+  padding:15px;
 }
 
 
