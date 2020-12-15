@@ -86,6 +86,15 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
+body{
+  padding:23px;
+}
+
+h3{
+margin-block-start:0px;
+margin-block-end:0px;
+}
+
 header,
 footer{
   display:flex;
@@ -95,12 +104,20 @@ footer{
   border:1px solid red;
 }
 
+.content-wrapper{
+  width:100%;
+}
+
 /*========= header mobile flex layout ============*/
+header{
+  padding:15px 0;
+}
 header .content-wrapper{
   display:flex;
   justify-content:center;
   align-content: center;
   flex-flow:row wrap;
+  margin:0px;
   border:1px solid blue;
 }
 
@@ -109,11 +126,17 @@ header img{
   border:1px solid cadetblue;
 }
 
+.header-divider{
+  width:100%;
+  border-top:1px solid black;
+}
+
 header nav{
   display:flex;
   justify-content:space-around;
-  align-items:center;
+  align-content:center;
   flex-flow:row wrap;
+  width:60%;
   border:1px solid orange;
 }
 
@@ -121,20 +144,30 @@ header nav ul{
   display:flex;
   justify-content:space-around;
   list-style: none;
+  width:34%;
   border:1px solid green;
-  padding:0 0 0 0px;/*fixes default template issue of 40px left added*/
+  padding:0 0px;/*fixes default template issue of 40px left added*/
   padding-inline-start:0px; /* defaul template creates extra padding*/
   margin-block-start: 0em; /*default template creates extra margin around item*/
   margin-block-end: 0em; /*default template creates extra margin around item*/
 }
 
 header nav ul li{
-  padding:10px;
+
   border:1px solid purple;
 }
 
 
 /*============== footer mobile flex layout ================*/
+
+footer .content-wrapper{
+  width:55%;
+  margin: 50px 0;
+}
+
+footer p{
+  margin:0px;
+}
 
 footer .social-icons{
   display:flex;
@@ -149,6 +182,11 @@ footer .social p{
   align-items: center;
   padding:2px;
   border:1px solid blue;
+}
+
+.copyright{
+  text-align: center;
+  width:100%;
 }
 
 /*============== Home Page Specific mobile flex layout ================*/
@@ -190,10 +228,21 @@ aside{
   border:1px solid red;
 }
 
-.reviews{
+.features article{
+  width:56%;
+  padding:15px;
+}
+
+.features p{
+  margin:0px;
+}
+
+.reviews h3{
   display:flex;
-  justify-content:center;
+  justify-content:flex-start;
   flex-flow:row wrap;
+  width:100%;
+  margin:0;
 }
 
 /* ================ About Page Layout Styles =================*/
