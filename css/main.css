@@ -99,7 +99,7 @@ footer{
 header .content-wrapper{
   display:flex;
   justify-content:center;
-  align-items: center;
+  align-content: center;
   flex-flow:row wrap;
   border:1px solid blue;
 }
@@ -111,8 +111,9 @@ header img{
 
 header nav{
   display:flex;
-  justify-content:center;
+  justify-content:space-around;
   align-items:center;
+  flex-flow:row wrap;
   border:1px solid orange;
 }
 
@@ -137,7 +138,7 @@ header nav ul li{
 
 footer .social-icons{
   display:flex;
-  justify-content:center;
+  justify-content:space-around;
   align-items: center;
   border:1px solid green;
 }
@@ -149,6 +150,87 @@ footer .social p{
   padding:2px;
   border:1px solid blue;
 }
+
+/*============== Home Page Specific mobile flex layout ================*/
+
+.hero-area{
+  display:flex;
+  justify-content:center;
+  flex-flow:row wrap;
+  border:1px solid pink;
+}
+
+aside{
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  flex-flow:row wrap;
+  border:1px solid lightgray;
+}
+
+.form-description{
+  border:1px solid gray;
+}
+
+.form{
+  border:1px solid darkgray;
+}
+
+.features{
+  display:flex;
+  justify-content:center;
+  flex-flow:row wrap;
+}
+
+.features .features-items{
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  flex-flow:row wrap;
+  border:1px solid red;
+}
+
+.reviews{
+  display:flex;
+  justify-content:center;
+  flex-flow:row wrap;
+}
+
+/* ================ About Page Layout Styles =================*/
+
+.mission{
+  display:flex;
+  justify-content:center;
+  align-items: center;
+  flex-flow: row wrap;
+}
+
+
+.contact-section{
+  display:flex;
+  flex-flow: row wrap;
+  justify-content:center;
+  align-items: center;
+}
+
+
+/* ================ FAQ Page Layout Styles =================*/
+
+.faq{
+  display:flex;
+  flex-flow:row wrap;
+  justify-content:center;
+  align-items:center;
+
+}
+
+.faq .content-wrapper{
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  flex-flow:row wrap;
+}
+
 
 /* ==========================================================================
    Helper classes
