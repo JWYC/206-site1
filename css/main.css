@@ -86,6 +86,57 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
+Header,
+Footer{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow:row wrap;
+  border:1px solid red;
+}
+
+
+header .content-wrapper{
+  display:flex;
+  justify-content:center;
+  align-items: center;
+  flex-flow:row wrap;
+  border:1px solid blue;
+}
+
+header img{
+  padding:50px;/*temp size inserted to make stacking of logo visible and not folded under nav*/
+  border:1px solid cadetblue;
+}
+
+header nav{
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  border:1px solid orange;
+}
+
+
+header nav ul{
+  display:flex;
+  justify-content:space-around;
+  list-style: none;
+  border:1px solid green;
+  padding:0 0 0 0px;/*fixes default template issue of 40px left added*/
+  padding-inline-start:0px; /* defaul template creates extra padding*/
+  margin-block-start: 0em; /*default template creates extra margin around item*/
+  margin-block-end: 0em; /*default template creates extra margin around item*/
+}
+
+header nav ul li{
+  padding:10px;
+  border:1px solid purple;
+}
+
+
+
+
+
 
 /* ==========================================================================
    Helper classes
@@ -260,4 +311,3 @@ textarea {
     page-break-after: avoid;
   }
 }
-
