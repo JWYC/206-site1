@@ -86,9 +86,82 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
-header, main, footer{
-  padding:23px;
+/*general styles*/
+
+html{
+  font-size:16px;
 }
+
+body{
+  font-family:"open sans", sans-serif;
+  font-size:1em;
+  margin:0px;
+}
+
+ol,
+ul{
+  list-style: none;
+}
+
+a{
+  color: #e2e3ed;
+  text-decoration: none;
+}
+
+h1{
+  font-family: "Poppins",sans-serif;
+  font-size:2em;
+  line-height: 1em;
+}
+
+h2{
+  font-family: "Poppins",sans-serif;
+  font-size:1.875em;
+  line-height:1em;
+}
+
+h3,
+h4{
+  font-family:"Poppins", sans-serif;
+  font-size:1.125em;
+  line-height: 1.5em;
+}
+
+.reviews h3{
+  font-size:1.25em;
+  line-height:1.25em;
+}
+
+p{
+  font-size: .875em;
+  line-height: 1.285;
+
+}
+
+
+img{
+
+}
+
+figure{
+
+}
+
+address{
+  color: #e2e3ed;
+  text-decoration: none;
+  line-height: 1em;
+  font-style: normal;
+}
+
+
+.content-wrapper{
+  width:100%;
+  margin:50px;
+  border:1px solid blue;
+}
+
+/* end gneral styles*/
 
 h3{
 margin-block-start:0px;
@@ -101,12 +174,9 @@ footer{
   justify-content:center;
   align-items:center;
   flex-flow:row wrap;
-  border:1px solid red;
+
 }
 
-.content-wrapper{
-  width:100%;
-}
 
 /*========= header mobile flex layout ============*/
 header{
@@ -118,12 +188,10 @@ header .content-wrapper{
   align-content: center;
   flex-flow:row wrap;
   margin:0px;
-  border:1px solid blue;
 }
 
 header img{
   padding:10px 50px;/*temp size inserted to make stacking of logo visible and not folded under nav*/
-  border:1px solid cadetblue;
 }
 
 .header-divider{
@@ -138,15 +206,12 @@ header nav{
   align-content:center;
   flex-flow:row wrap;
   width:60%;
-  border:1px solid orange;
 }
 
 header nav ul{
   display:flex;
   justify-content:space-around;
-  list-style: none;
   width:100%;
-  border:1px solid green;
   padding:0 0px;/*fixes default template issue of 40px left added*/
   padding-inline-start:0px; /* defaul template creates extra padding*/
   margin-block-start: 0em; /*default template creates extra margin around item*/
@@ -154,8 +219,7 @@ header nav ul{
 }
 
 header nav ul li{
-  padding:0 20px;
-  border:1px solid purple;
+  /*padding:0 20px;*/
 }
 
 
@@ -163,12 +227,12 @@ header nav ul li{
 
 footer{
   flex-direction:column;
-  text-align: center;
 }
 
 footer .content-wrapper{
-  width:66%;
   margin: 50px 0;
+  width:55%;
+  text-align: center;
 }
 
 footer .contact{
@@ -183,7 +247,6 @@ footer .social-icons{
   display:flex;
   justify-content:space-around;
   align-items: center;
-  border:1px solid green;
 }
 
 footer .social p{
@@ -191,7 +254,6 @@ footer .social p{
   justify-content:center;
   align-items: center;
   padding:2px;
-  border:1px solid blue;
 }
 
 .copyright{
@@ -205,26 +267,37 @@ footer .social p{
   display:flex;
   justify-content:center;
   flex-flow:row wrap;
-  border:1px solid pink;
+  border:1px solid red;
+}
+
+.hero-area h1{
+
 }
 
 aside{
   display:flex;
   justify-content:center;
-  align-items:center;
+  align-content:center;
   flex-flow:row wrap;
-  border:1px solid lightgray;
 }
 
-.form-description{
-  border:1px solid gray;
+
+
+/*.form-description{
+  padding:0 23px;
 }
 
 .form{
   display:flex;
   flex-flow:column;
-  border:1px solid darkgray;
+  align-items:flex-start;
+  justify-content:flex-start;
+  padding:0 23px;
 }
+
+.form input{
+  margin:5px 0;
+}*/
 
 .features{
   display:flex;
@@ -232,17 +305,21 @@ aside{
   flex-flow:row wrap;
 }
 
+.features h2{
+  margin-bottom:60px;
+}
+
 .features .features-items{
   display:flex;
   justify-content:center;
   align-items:center;
   flex-flow:row wrap;
-  border:1px solid red;
 }
 
 .features article{
   width:56%;
-  padding:30px 0;
+  padding:30px 0px;
+  text-align: center;
 }
 
 .features h2{
@@ -268,6 +345,7 @@ aside{
   margin:20px 0;
 }
 
+
 /* ================ About Page Layout Styles =================*/
 
 .mission{
@@ -277,13 +355,33 @@ aside{
   flex-flow: row wrap;
 }
 
+/*.mission h2{
+  padding:0 50px;
+}
 
+.mission-content{
+  padding:0 50px 0 50px;
+}
+*/
 .contact-section{
   display:flex;
   flex-flow: row wrap;
   justify-content:center;
   align-items: center;
 }
+
+/*.contact-content div{
+    padding:0 50px 0 50px;
+    width:30%;
+}
+
+.contact-section h2{
+  padding: 40px 50px 0 50px;
+}
+
+.contact-section h4{
+  line-height: 1.2em;
+}*/
 
 .contact-content p{
   margin:0;
@@ -310,10 +408,15 @@ aside{
 
 .faq h2{
   margin-bottom: 40px;
+  /*padding: 0 50px;*/
+}
+
+.faq h3{
+    line-height: 1.1em;
 }
 
 .faq-content{
-  margin-bottom:50px;
+  margin:25px 50px 0 50px;
 }
 /* ==========================================================================
    Helper classes
@@ -405,14 +508,19 @@ aside{
 
 @media only screen and (min-width:768px){
   /* tablet styles here*/
-  header, main, footer{
-    padding:10px 50px;
+
+  .content-wrapper{
+    max-width:640px;
+    margin:100px 0;
   }
 
+  header{
+    justify-content: space-around;
+    padding:33px 0;
+  }
   header .content-wrapper{
-    display:flex;
-    flex-flow:row wrap;
-    align-content: space-around;
+    width:100%;
+    align-content: space-between;
   }
 
   header a{
@@ -439,7 +547,7 @@ aside{
   }
 
   aside .form-description{
-    width:48%;
+    width:40%;
   }
 
   aside .form{
@@ -447,51 +555,55 @@ aside{
   flex-flow:column;
   justify-content:center;
   align-items:flex-start;
-  width:48%;
+  width:40%;
 }
 
-  .features article{
-    flex-basis:50%;
+  .features article {
+    display:flex;
+    justify-content:center;
+    align-items: center;
+    flex-flow:column wrap;
+    flex-basis:30%;
   }
+
+  .features .features-items-description{
+    width:62%;
+  }
+
 
  .reviews article{
     display:flex;
     flex-flow:row wrap;
     justify-content: space-around;
     align-content: space-around;
-    border:1px solid red;
   }
 
   .reviews article img{
     width:45%;
     margin:15px;
-    border:1px solid pink;
   }
 
   .review-heading{
     width:45%;
-    border:1px solid green;
   }
 
   footer .content-wrapper{
-    width:100%;
+    width:65%;
+    margin:100px 0;
   }
 
   .footer-content{
     display:flex;
     flex-flow: row wrap;
     justify-content:space-around;
-    border:1px solid gray;
     width:100%;
   }
 
 .contact{
-    border:1px solid red;
     width:48%;
   }
 
   .social{
-    border:1px solid red;
     width:48%;
   }
 
@@ -500,11 +612,11 @@ aside{
   display:flex;
   flex-flow: row wrap;
   justify-content:space-around;
+  padding-top:20px;
 }
 
 .mission-content p{
   width:45%;
-  padding-right:30px;
 }
 
 address.contact-content{
@@ -520,7 +632,6 @@ address.contact-content{
 
 .facilitator-contact-info{
   width:45%;
-  border:1px solid red;
 }
 
 /*=============== FAQ page =====================*/
@@ -529,7 +640,6 @@ address.contact-content{
   display:flex;
   flex-flow:row wrap;
   justify-content: space-around;
-  border:1px solid red;
 }
 
 .faq-question-item{
@@ -541,35 +651,66 @@ address.contact-content{
 
 @media only screen and (min-width:1200px){
   /* desktop styles here*/
-  header, main, footer{
-    padding:10px 150px;
+
+.content-wrapper{
+    max-width:960px;
   }
+
+.hero-area h1{
+  width:60%;
+}
 
  aside .content-wrapper{
    justify-content:space-around;
  }
 
+ aside .content-wrapper .form-description,
+ aside .content-wrapper .form {
+   width: 30%;
+ }
+
+
 .features article{
-  flex:25%;
-  padding:25px;
+  flex:30%;
+  padding:20px 15px;
+}
+
+.features h2{
+  width:90%;
 }
 
 
 .contact,
 .social{
   width:250px;
-  border:1px solid blue;
-
 }
 
+
 .reviews article div{
-  width:400px;
+  width:40%;
 }
 
 /*=============== about page =====================*/
 .mission-content p{
   width:35%;
 }
+
+.mission h2{
+  width:95%;
+}
+
+.contact-section h2{
+  width:95%;
+}
+
+/*.contact-content{
+  padding:0 100px;
+}
+
+.contact-content div{
+    padding:0 25px 0 25px;
+    width:45%;
+}*/
 
 /*=============== faq page =====================*/
 
