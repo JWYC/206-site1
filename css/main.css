@@ -760,6 +760,11 @@ input[type=button] {
 .mission-content p{
   width:45%;
 }
+
+.map figure{
+  padding-bottom:46%;
+}
+
 .contact-section h2 {
   font-size:2.25em;
   width:80%;
@@ -873,6 +878,10 @@ header figure{
 
 .mission h2{
   width:100%;
+}
+
+.map figure{
+  padding-bottom:41.6%;
 }
 
 .contact-section{
