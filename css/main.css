@@ -111,12 +111,14 @@ a{
 
 h1{
   font-family: "Poppins",sans-serif;
-  font-size:2em;
-  line-height:1.1em;
+  font-weight: 500;
+  font-size:2.25em;
+  line-height:1em;
 }
 
 h2{
   font-family: "Poppins",sans-serif;
+  font-weight: 500;
   font-size:1.875em;
   line-height:1.1em;
 }
@@ -124,12 +126,13 @@ h2{
 h3,
 h4{
   font-family:"Poppins", sans-serif;
+  font-weight: 500;
   font-size:1.125em;
   line-height: 1.5em;
 }
 
 .reviews h3{
-  font-size:1.25em;
+  font-size:1.125em;
   line-height:1.25em;
 }
 
@@ -141,11 +144,11 @@ p{
 
 
 img{
-
+  width:100%;
 }
 
 figure{
-
+  margin:0;
 }
 
 address{
@@ -157,8 +160,8 @@ address{
 
 
 .content-wrapper{
-  width:100%;
-  margin:50px;
+  width:90%;
+  margin:50px 0;
 }
 
 /* end gneral styles*/
@@ -174,7 +177,6 @@ footer{
   justify-content:center;
   align-items:center;
   flex-flow:row wrap;
-
 }
 
 
@@ -183,22 +185,28 @@ header{
   padding:15px 0;
   background-color:#202322;
 }
+
 header .content-wrapper{
   display:flex;
   justify-content:center;
   align-content: center;
   flex-flow:row wrap;
-  margin:0px;
+  margin:0;
 }
 
-header img{
-  padding:10px 50px;/*temp size inserted to make stacking of logo visible and not folded under nav*/
+header figure{
+  width:60%;
+  display:flex;
+  justify-content: center;
+  align-content:center;
+  flex-flow:row wrap;
 }
+
 
 .header-divider{
   width:100%;
   border-top:1px solid black;
-  margin:10px 0 20px 0;
+  margin:10px 0 10px 0;
 }
 
 header nav{
@@ -213,14 +221,16 @@ header nav ul{
   display:flex;
   justify-content:space-around;
   width:100%;
-  padding:0 0px;/*fixes default template issue of 40px left added*/
+  padding:18px 0px;/*fixes default template issue of 40px left added*/
   padding-inline-start:0px; /* defaul template creates extra padding*/
   margin-block-start: 0em; /*default template creates extra margin around item*/
   margin-block-end: 0em; /*default template creates extra margin around item*/
 }
 
 header nav ul li{
-  padding:0 20px;
+  font-weight: 700;
+  font-size:1.4em;
+  margin:0 20px 0 20px;
 }
 
 
@@ -267,11 +277,23 @@ footer .social p{
 
 .hero-area{
   display:flex;
-  justify-content:center;
-  flex-flow:row wrap;
+  justify-content:flex-start;
+  align-items:center;
+  flex-flow:column;
+  min-height:500px;
+  background:url('../img/jake-melara-resized.jpg') center no-repeat #333;
+  background-size:cover;
+  padding: 0px 0 80px 0;
+}
+
+.hero-area .content-wrapper{
+  display:flex;
+  justify-content:flex-start;
+  width:90%;
 }
 
 .hero-area h1{
+  margin:20px 0px;
 
 }
 
@@ -311,6 +333,7 @@ input[type=text] {
   color: #2a423a;
   font-style: italic;
   padding: 1em;
+  margin-top:20px;
 }
 
 input[type=button] {
@@ -331,6 +354,8 @@ input[type=button] {
   display:flex;
   justify-content:center;
   flex-flow:row wrap;
+  background:url('../img/rawpixel-resized.png') center no-repeat #333;
+  background-size:cover;
 }
 
 .features h2{
@@ -365,13 +390,16 @@ input[type=button] {
   background-color:#2a423a;
 }
 
+.reviews-heading{
+
+}
+
 .reviews h2{
   margin-bottom:40px;
 }
 
 .reviews h3{
-  width:55%;
-  margin:20px 0;
+  margin:20px 0 20px 0;
 }
 
 
@@ -570,7 +598,7 @@ input[type=button] {
 
   .content-wrapper{
     max-width:640px;
-    margin:50px 0 70px 0;
+    margin:100px 0 100px 0;
   }
 
   header{
@@ -579,10 +607,19 @@ input[type=button] {
   }
   header .content-wrapper{
     width:100%;
-    align-content: space-between;
+    justify-content:space-between;
   }
 
-  header a{
+  header figure{
+    width:40%;
+    align-items:flex-start;
+  }
+
+  header img{
+    padding:0;
+  }
+
+  header li a{
     width:48%;
   }
 
@@ -599,14 +636,25 @@ input[type=button] {
     justify-content: flex-end;
   }
 
+  .hero-area{
+    height:600px;
+  }
+
+  .hero-area h1{
+    font-size:3em;
+    line-height: 1em;
+  }
+
   aside .content-wrapper{
     display:flex;
     flex-flow:row wrap;
-    justify-content: space-around;
+    justify-content: space-between;
+    margin:50px 0;
   }
 
   aside .form-description{
     width:40%;
+    margin:0;
   }
 
   aside .form{
@@ -615,6 +663,7 @@ input[type=button] {
   justify-content:center;
   align-items:flex-start;
   width:40%;
+  margin:0;
 }
 
   .features article {
@@ -622,30 +671,41 @@ input[type=button] {
     justify-content:center;
     align-items: center;
     flex-flow:column wrap;
-    flex-basis:40%;
-    margin: 15px 20px;
+    flex-basis:50%;
+
 
   }
 
-  .features .features-items-description{
+  .features .features-item-description{
     width:62%;
+    margin: 10px 0px;
   }
 
 
  .reviews article{
     display:flex;
     flex-flow:row wrap;
-    justify-content: space-around;
-    align-content: space-around;
+    justify-content: space-between;
+    align-content: space-between;
   }
 
-  .reviews article img{
-    width:45%;
-    margin:15px;
+  .reviews article figure{
+    width:50%;
   }
 
   .review-heading{
     width:45%;
+    margin: 0 0 0 10px;
+  }
+
+  .reviews h2{
+    font-size:2.5em;
+    width:90%;
+  }
+
+  .reviews h3{
+    font-size:1.5em;
+    padding: 0 0 20px 0;
   }
 
   footer .content-wrapper{
@@ -717,8 +777,21 @@ address.contact-content{
     max-width:960px;
   }
 
+header{
+  padding:15px 0;
+}
+
+header figure{
+  width:25%;
+}
+
+.hero-area{
+  height:600px;
+}
+
 .hero-area h1{
-  width:60%;
+  width:80%;
+  font-size:3.75em;
 }
 
  aside .content-wrapper{
@@ -730,9 +803,14 @@ address.contact-content{
    width: 30%;
  }
 
+ aside h3{
+   font-size:1.875em;
+   line-height: 1.25em;
+ }
+
 
 .features article{
-  flex:30%;
+  flex:25%;
   padding:20px 15px;
 }
 
