@@ -192,7 +192,6 @@ header .content-wrapper{
   align-content: center;
   flex-flow:row wrap;
   margin:0;
-  border:1px solid red;
 }
 
 header figure{
@@ -246,7 +245,6 @@ footer .content-wrapper{
   margin: 50px 0;
   width:55%;
   text-align: center;
-  border:1px solid blue;
 }
 
 footer .contact{
@@ -471,7 +469,7 @@ input[type=button] {
   flex-flow:row wrap;
   justify-content:center;
   align-items:center;
-
+  background-color:#527158;
 }
 
 .faq .content-wrapper{
@@ -479,7 +477,7 @@ input[type=button] {
   justify-content:center;
   align-items:center;
   flex-flow:row wrap;
-  margin: 50px  0 0 0;
+  margin: 50px  0 50px 0;
 }
 
 .faq h2{
@@ -753,12 +751,18 @@ input[type=button] {
 .mission-content{
   display:flex;
   flex-flow: row wrap;
-  justify-content:space-around;
+  justify-content:space-between;
   padding-top:20px;
 }
-
+.mission h2{
+  font-size:2.25em;
+}
 .mission-content p{
   width:45%;
+}
+.contact-section h2 {
+  font-size:2.25em;
+  width:80%;
 }
 
 address.contact-content{
@@ -854,16 +858,25 @@ header figure{
 
 /*=============== about page =====================*/
 .mission-content p{
-  width:35%;
+  width:40%;
+  padding: 0 0px 0 0;
+  border:1px solid blue;
+}
+
+.mission .content-wrapper{
+  border:1px solid red;
+}
+
+.mission-content{
+  margin:;
 }
 
 .mission h2{
-  width:95%;
+  width:100%;
 }
 
 .contact-section{
   width:100%;
-  border:1px solid yellow;
 }
 
 .general-contact-info{
@@ -871,9 +884,8 @@ header figure{
 }
 
 .contact-content div{
-    padding:0 25px 0 25px;
+    padding:0 55px 0 0px;
     width:40%;
-    border:1px solid red;
 }
 
 /*=============== faq page =====================*/
