@@ -151,6 +151,11 @@ figure{
   margin:0;
 }
 
+.features i{
+  font-size:3.75em;
+  margin-bottom:40px;
+}
+
 address{
   color: #e2e3ed;
   text-decoration: none;
