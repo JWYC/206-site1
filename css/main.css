@@ -156,6 +156,18 @@ figure{
   margin-bottom:40px;
 }
 
+.social-icons a{
+  height:40px;
+  width:40px;
+  border-radius: 40px ;
+  background-color:#527158;
+}
+
+.social-icons i{
+  padding: 8px;
+  font-size:1.75em;
+}
+
 address{
   color: #e2e3ed;
   text-decoration: none;
@@ -260,6 +272,13 @@ footer p{
   margin:0px;
 }
 
+footer .social{
+  display:flex;
+  flex-flow:column;
+  align-items: center;
+  align-content: flex-start;
+}
+
 footer .social-icons{
   display:flex;
   justify-content:space-around;
@@ -270,7 +289,7 @@ footer .social p{
   display:flex;
   justify-content:center;
   align-items: center;
-  padding:2px;
+  padding:0 12px;
 }
 
 .copyright{
