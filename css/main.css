@@ -501,20 +501,24 @@ input[type=button] {
   justify-content:center;
   align-items:center;
   flex-flow:row wrap;
-  margin: 50px  0 50px 0;
+  margin: 0px  0 50px 0;
 }
 
 .faq h2{
-  margin-bottom: 40px;
+  margin:40px 10px 40px 10px;
   /*padding: 0 50px;*/
 }
 
 .faq h3{
-    line-height: 1.1em;
+    line-height: 1.3em;
 }
 
 .faq-content{
-  margin:25px 50px 0 50px;
+  margin:0px 10px 0 10px;
+}
+
+.faq-question-item{
+  margin:0 0 35px 0;
 }
 
 /*----- input form styles ---------*/
@@ -794,15 +798,15 @@ input[type=button] {
   width:80%;
 }
 
-address.contact-content{
+.contact-content{
   display:flex;
   flex-flow:row wrap;
-  align-content:space-between;
+  justify-content:space-between;
 }
 
 .general-contact-info{
   width:45%;
-  padding-right:30px;
+  padding-right:0px;
 }
 
 .facilitator-contact-info{
@@ -822,12 +826,15 @@ address.contact-content{
 .faq-question-item{
   flex:40%;
   padding:15px;
-}
-
+  margin:0 0 0px 0;
 }
 
 @media only screen and (min-width:1200px){
   /* desktop styles here*/
+
+p{
+  font-size:1.125em;
+}
 
 .content-wrapper{
     max-width:960px;
@@ -840,6 +847,16 @@ header{
 header figure{
   width:25%;
 }
+
+footer .content-wrapper{
+  width:90%;
+}
+
+.contact,
+.social{
+  width:350px;
+}
+
 
 .hero-area{
   height:600px;
@@ -875,10 +892,7 @@ header figure{
 }
 
 
-.contact,
-.social{
-  width:250px;
-}
+
 
 
 .reviews article div{
@@ -887,17 +901,8 @@ header figure{
 
 /*=============== about page =====================*/
 .mission-content p{
-  width:40%;
+  width:48%;
   padding: 0 0px 0 0;
-  border:1px solid blue;
-}
-
-.mission .content-wrapper{
-  border:1px solid red;
-}
-
-.mission-content{
-  margin:;
 }
 
 .mission h2{
@@ -912,23 +917,26 @@ header figure{
   width:100%;
 }
 
+.contact-section h4{
+  font-size:1.6em;
+}
+
 .general-contact-info{
   padding:0;
 }
 
 .contact-content div{
-    padding:0 55px 0 0px;
-    width:40%;
+    padding:0 0px 0 0px;
+    width:48%;
 }
 
 /*=============== faq page =====================*/
 
 .faq-question-item{
   flex:30%;
-  padding:35px;
+  padding:25px 35px 15px 35px;
 }
 
-}
 
 
 /* ==========================================================================
